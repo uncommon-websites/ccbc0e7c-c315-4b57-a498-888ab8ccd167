@@ -2,112 +2,101 @@
   import VideoCard from "$lib/components/VideoCard.svelte";
 </script>
 
-<div class="pt-32 pb-20">
-  <!-- Hero Section -->
-  <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-24">
-    <h1 class="text-[clamp(3rem,8vw,6rem)] leading-[0.9] font-medium text-center mb-12 tracking-tight">
-      Say hello to Memo
-    </h1>
-    
-    <div class="w-full aspect-[16/10] bg-gray-200 rounded-2xl overflow-hidden mb-12 relative">
-      <!-- Placeholder for Hero Image -->
-      <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop')] bg-cover bg-center opacity-90"></div>
-      <div class="absolute inset-0 flex items-center justify-center">
-        <!-- Play button overlay if it's a video -->
+<div class="pb-20">
+  <!-- Hero Section - ALREADY CUSTOMIZED, DO NOT MODIFY -->
+  <section class="pt-32 pb-12 px-4 sm:px-6">
+    <div class="text-center max-w-4xl mx-auto mb-12">
+      <div class="flex flex-col items-center justify-center space-y-1 mb-6">
+        <p class="text-[#475569] text-sm font-medium">Unified creator operations</p>
+        <p class="text-gray-400 text-xs">Replace manager commissions with AI agents</p>
       </div>
+      
+      <h1 class="text-5xl md:text-7xl lg:text-[5.5rem] leading-none font-medium text-gray-900 tracking-tight">
+        Your business on autopilot
+      </h1>
     </div>
 
-    <div class="max-w-2xl">
+    <div class="relative w-full max-w-[1400px] mx-auto">
+      <div class="rounded-3xl overflow-hidden shadow-sm aspect-[16/9] md:aspect-[21/9] lg:aspect-[16/8] bg-gray-100">
+        <img src="https://imolwncbqxugevwmleed.supabase.co/storage/v1/object/public/public-assets/hero-images/ccbc0e7c-c315-4b57-a498-888ab8ccd167/hero-1-img-0-1770165821847.png" 
+             alt="CreatorOS Dashboard Preview" 
+             class="w-full h-full object-cover">
+      </div>
+
+      <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full max-w-max px-4">
+        <button class="group bg-[#FCE844] hover:bg-[#fde047] transition-all duration-300 text-gray-900 rounded-full px-6 py-3.5 flex items-center justify-center gap-6 shadow-lg mx-auto">
+          <span class="font-medium text-sm tracking-tight">Scale your business</span>
+          <span class="font-light text-sm text-gray-800 flex items-center gap-2">
+            Join the waitlist
+            <span class="w-1.5 h-1.5 bg-black rounded-full"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Value Proposition Section -->
+  <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-32 mt-24">
+    <div class="max-w-3xl mx-auto text-center">
       <p class="text-xl md:text-2xl leading-relaxed text-gray-800">
-        Built for busy households, Memo works 24/7 to make your life lighter. Hand off your repetitive to-do's, so you can focus on what really matters.
+        CreatorOS replaces spreadsheets, inbox chaos, and part-time managers with AI agents that handle sponsorships, finances, growth, and community. All in one place.
       </p>
     </div>
   </section>
 
-  <!-- Intro Video Section -->
-  <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-40">
-    <div class="flex flex-col md:flex-row items-end justify-between gap-12">
-      <div class="max-w-xs mb-8 md:mb-0">
-        <p class="text-xs font-medium leading-relaxed text-gray-500 uppercase tracking-wide">
-          Robots should give you back what matters most — time. Watch how our team came together to work on this mission.
-        </p>
-      </div>
-      <div class="w-full md:w-[400px]">
-        <VideoCard 
-          imageSrc="" 
-          alt="Team working on mission"
-          title="Our Story"
-          subtitle="Watch"
-        />
-      </div>
-    </div>
-  </section>
-
-  <!-- Mundane Made Magic -->
+  <!-- Big Statement -->
   <section class="max-w-[1000px] mx-auto px-4 mb-40">
-    <div class="flex flex-col gap-8 text-[clamp(4rem,10vw,9rem)] leading-[0.8] tracking-tight font-medium">
-      <div class="text-left">Mundane</div>
-      <div class="text-center pl-[20%]">made</div>
-      <div class="text-right pr-[10%]">magic</div>
+    <div class="flex flex-col gap-8 text-[clamp(3rem,8vw,7rem)] leading-[0.85] tracking-tight font-medium">
+      <div class="text-left">All the business,</div>
+      <div class="text-center pl-[15%]">none of the</div>
+      <div class="text-right pr-[10%]">busywork</div>
     </div>
   </section>
 
-  <!-- Kitchen Section -->
+  <!-- Features Section -->
   <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-32">
-    <div class="max-w-2xl mx-auto text-center mb-16">
-      <p class="text-lg text-gray-600 leading-relaxed">
-        Powered by state-of-the-art AI models and an ever-expanding Skill Library, Memo doesn't just know how to do a few tasks—Memo improves its skills faster than any robot that has come before it.
-      </p>
-    </div>
-
     <div class="grid grid-cols-1 gap-4">
-      <!-- Main Kitchen Image -->
+      <!-- Main Feature Image -->
       <div class="relative w-full aspect-[16/9] bg-gray-200 rounded-2xl overflow-hidden group">
-        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
-          Image: Memo works in the kitchen
-        </div>
+        <img src="/generated/image-professional-creator-working-at-desk-wit-1770166419480-0.webp" alt="AI Agents Managing Creator Business" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
         <div class="absolute bottom-8 left-8 md:bottom-12 md:left-12">
-          <h2 class="text-3xl md:text-5xl font-medium text-white tracking-tight">Memo works in the kitchen</h2>
+          <h2 class="text-3xl md:text-5xl font-medium text-white tracking-tight">AI agents that work 24/7</h2>
         </div>
         <div class="absolute top-4 left-4 px-2 py-1 bg-black/30 backdrop-blur-md rounded text-[10px] uppercase tracking-wider text-white font-medium">
           01
         </div>
       </div>
 
-      <!-- Sub Images Row -->
+      <!-- Sub Features Row -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden relative p-8 flex items-end">
-           <p class="text-xs text-gray-600 max-w-xs">
-             Memo can quietly and autonomously clear tables of plates and delicate glasses, throw out food scraps, and load up your dishwasher before running it. Let Memo take care of the mess, so you can go take care of the things only you can do.
+        <div class="aspect-[4/3] bg-white rounded-2xl overflow-hidden relative p-8 flex flex-col justify-between">
+           <div class="absolute top-4 left-4 text-[10px] text-gray-400 uppercase tracking-wider">Deals Agent</div>
+           <p class="text-sm text-gray-700 max-w-xs">
+             Automate brand outreach, negotiation, and payment tracking. Handle sponsorships start to finish without the back-and-forth.
            </p>
-           <div class="absolute top-4 left-4 text-[10px] text-gray-400 uppercase tracking-wider">Lightening the load</div>
         </div>
         <div class="aspect-[4/3] bg-gray-200 rounded-2xl overflow-hidden relative">
-           <div class="absolute inset-0 flex items-center justify-center text-gray-400">
-            Image: Robot in living room
-          </div>
-          <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
-             <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-              <svg width="8" height="10" viewBox="0 0 10 12" fill="none" class="ml-0.5"><path d="M9 6L0.75 10.7631L0.75 1.23686L9 6Z" fill="currentColor"/></svg>
-            </div>
-            <span class="text-xs font-medium">Spot check: A magic moment</span>
+           <img src="/generated/image-young-content-creator-reviewing-brand-de-1770166422132-1.webp" alt="Deal Management" class="w-full h-full object-cover" />
+           <div class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+          <div class="absolute bottom-4 left-4 text-white">
+            <span class="text-xs font-medium">Brand partnerships simplified</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Homes Section -->
+  <!-- Finance & Growth Section -->
   <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-32">
     <div class="grid grid-cols-1 gap-4">
-      <!-- Main Homes Image -->
+      <!-- Main Finance Image -->
       <div class="relative w-full aspect-[16/9] bg-gray-200 rounded-2xl overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
-          Image: Memo works in homes it's never seen
-        </div>
+        <img src="/generated/image-creator-analyzing-financial-dashboard-wi-1770166424193-2.webp" alt="Financial Dashboard" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
         <div class="absolute inset-0 flex items-center justify-center">
           <h2 class="text-3xl md:text-5xl font-medium text-white tracking-tight text-center max-w-2xl">
-            Memo works in<br/>homes it's never seen
+            Track revenue and<br/>expenses in real time
           </h2>
         </div>
         <div class="absolute top-4 left-4 px-2 py-1 bg-black/30 backdrop-blur-md rounded text-[10px] uppercase tracking-wider text-white font-medium">
@@ -115,47 +104,40 @@
         </div>
       </div>
 
-      <!-- Sub Images Row -->
+      <!-- Sub Features Row -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="aspect-square md:aspect-auto md:h-64 bg-white rounded-2xl p-6 flex flex-col justify-between">
-           <p class="text-[10px] uppercase tracking-wider text-gray-400">A new home is Memo's terrain.</p>
+           <p class="text-[10px] uppercase tracking-wider text-gray-400">Finance Agent</p>
            <p class="text-xs text-gray-600 leading-relaxed">
-             We believe Memo should be easy to use in the real world, starting autonomously out of the box. Hundreds of people in unique homes show Memo their environments each day, so Memo can robustly handle the chaos of real life.
+             Get reports, reconcile payments, and plan your runway. No more spreadsheet chaos or missed invoices.
            </p>
         </div>
-        <div class="aspect-video md:aspect-auto bg-gray-200 rounded-2xl overflow-hidden relative">
-           <div class="absolute inset-0 flex items-center justify-center text-gray-400">Image</div>
-           <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
-             <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-              <svg width="8" height="10" viewBox="0 0 10 12" fill="none" class="ml-0.5"><path d="M9 6L0.75 10.7631L0.75 1.23686L9 6Z" fill="currentColor"/></svg>
-            </div>
-            <span class="text-xs font-medium">01. Unboxing</span>
-          </div>
+        <div class="aspect-square md:aspect-auto md:h-64 bg-gray-50 rounded-2xl p-6 flex flex-col justify-between">
+           <p class="text-[10px] uppercase tracking-wider text-gray-400">Growth Agent</p>
+           <p class="text-xs text-gray-600 leading-relaxed">
+             Test content strategies, optimize revenue, and spot viral trends early. Scale without more grunt work.
+           </p>
         </div>
-        <div class="aspect-video md:aspect-auto bg-gray-200 rounded-2xl overflow-hidden relative">
-           <div class="absolute inset-0 flex items-center justify-center text-gray-400">Image</div>
-           <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
-             <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-              <svg width="8" height="10" viewBox="0 0 10 12" fill="none" class="ml-0.5"><path d="M9 6L0.75 10.7631L0.75 1.23686L9 6Z" fill="currentColor"/></svg>
-            </div>
-            <span class="text-xs font-medium">02. Learning a new home concept</span>
-          </div>
+        <div class="aspect-square md:aspect-auto md:h-64 bg-gray-100 rounded-2xl p-6 flex flex-col justify-between">
+           <p class="text-[10px] uppercase tracking-wider text-gray-400">Community Agent</p>
+           <p class="text-xs text-gray-600 leading-relaxed">
+             Manage community, launch drops, and build a direct relationship with fans. Own your audience.
+           </p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Learning Section -->
+  <!-- Target Audience Section -->
   <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-40">
     <div class="grid grid-cols-1 gap-4">
-      <!-- Main Learning Image -->
+      <!-- Main Image -->
       <div class="relative w-full aspect-[16/9] bg-gray-200 rounded-2xl overflow-hidden">
-        <div class="absolute inset-0 flex items-center justify-center text-gray-400">
-          Image: Memo is always learning
-        </div>
+        <img src="/generated/image-youtuber-filming-content-in-home-studio--1770166426781-3.webp" alt="Creator in studio" class="w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
         <div class="absolute inset-0 flex items-center justify-center">
-          <h2 class="text-3xl md:text-5xl font-medium text-white tracking-tight text-center">
-            Memo is always learning
+          <h2 class="text-3xl md:text-5xl font-medium text-white tracking-tight text-center max-w-3xl px-4">
+            Built for emerging-pro creators
           </h2>
         </div>
         <div class="absolute top-4 left-4 px-2 py-1 bg-black/30 backdrop-blur-md rounded text-[10px] uppercase tracking-wider text-white font-medium">
@@ -163,207 +145,91 @@
         </div>
       </div>
 
-      <!-- Sub Images Row -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div class="aspect-square md:aspect-auto md:h-64 bg-white rounded-2xl p-6 flex flex-col justify-between">
-           <p class="text-[10px] uppercase tracking-wider text-gray-400">Teach it once, it learns.</p>
-           <p class="text-xs text-gray-600 leading-relaxed">
-             In December 2024, Memo had only one skill. Just six months later, it's managing dishes, laundry, and tidying up. Memo continues to learn fast. Give it time, teach it patience, and watch it unlock happiness.
+      <!-- Sub Content Row -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div class="aspect-square md:aspect-auto md:h-64 bg-white rounded-2xl p-8 flex flex-col justify-between">
+           <p class="text-[10px] uppercase tracking-wider text-gray-400">The $10K-$100K stage</p>
+           <p class="text-sm text-gray-700 leading-relaxed">
+             You're earning real money, but stuck between DIY tools and expensive managers. CreatorOS gives you the infrastructure to scale—without the 15-20% commission.
            </p>
         </div>
-        <div class="aspect-video md:aspect-auto bg-gray-200 rounded-2xl overflow-hidden relative">
-           <div class="absolute inset-0 flex items-center justify-center text-gray-400">Image</div>
-           <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
-             <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-              <svg width="8" height="10" viewBox="0 0 10 12" fill="none" class="ml-0.5"><path d="M9 6L0.75 10.7631L0.75 1.23686L9 6Z" fill="currentColor"/></svg>
-            </div>
-            <span class="text-xs font-medium">A. Memo doing laundry</span>
-          </div>
-        </div>
-        <div class="aspect-video md:aspect-auto bg-gray-200 rounded-2xl overflow-hidden relative">
-           <div class="absolute inset-0 flex items-center justify-center text-gray-400">Image</div>
-           <div class="absolute bottom-4 left-4 flex items-center gap-2 text-white">
-             <div class="w-6 h-6 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center">
-              <svg width="8" height="10" viewBox="0 0 10 12" fill="none" class="ml-0.5"><path d="M9 6L0.75 10.7631L0.75 1.23686L9 6Z" fill="currentColor"/></svg>
-            </div>
-            <span class="text-xs font-medium">B. Memo tidying up around the house</span>
-          </div>
+        <div class="aspect-square md:aspect-auto md:h-64 bg-gray-50 rounded-2xl p-8 flex flex-col justify-between">
+           <p class="text-[10px] uppercase tracking-wider text-gray-400">Starting with YouTubers & TikTokers</p>
+           <p class="text-sm text-gray-700 leading-relaxed">
+             We're laser-focused on video creators who need business infrastructure but lack operational systems to scale. If you're serious about growth, CreatorOS is for you.
+           </p>
         </div>
       </div>
     </div>
-  <!-- Imitation to Intuition -->
-  <section class="bg-[#E3EBE6] py-32 mb-32 -mx-4 md:-mx-8 px-4 md:px-8">
+  </section>
+
+  <!-- Social Proof Section -->
+  <section class="bg-gray-50 py-32 mb-32 -mx-4 md:-mx-8 px-4 md:px-8">
     <div class="max-w-[1400px] mx-auto">
       <h2 class="text-[clamp(2.5rem,5vw,4rem)] leading-tight font-medium text-center mb-20 tracking-tight text-balance max-w-4xl mx-auto">
-        From imitation to intuition
+        Like having a business manager—without giving up 20%
       </h2>
 
       <div class="flex flex-col items-center mb-20">
         <div class="w-full max-w-md aspect-[3/4] bg-gray-300 rounded-2xl overflow-hidden relative mb-12">
-          <div class="absolute inset-0 flex items-center justify-center text-gray-500">
-            Image: Hand holding glove
-          </div>
+          <img src="/generated/image-confident-female-creator-smiling-while-r-1770166430691-5.webp" alt="Successful creator" class="w-full h-full object-cover" />
         </div>
         
         <div class="max-w-xl text-center">
-          <p class="text-lg text-gray-700 leading-relaxed">
-            Our Skill Capture Glove™ enables Memo to distill millions of human movements into its onboard AI, unlocking helpful home skills. What the glove does, Memo learns.
+          <p class="text-lg text-gray-700 leading-relaxed mb-4">
+            "Emerging-pro creators are stuck: $10K-$100K/month in earnings, but no infrastructure to grow. We built CreatorOS for this exact stage."
           </p>
+          <p class="text-sm text-gray-500">Replace commissions with software.</p>
         </div>
       </div>
 
       <div class="max-w-4xl mx-auto">
-        <VideoCard 
-          imageSrc="" 
-          alt="Skill Capture Glove Demo"
-          title="Skill Capture Glove in use"
-          subtitle=""
-        />
-        <div class="text-center mt-12 space-y-2">
-          <p class="text-xs text-gray-500 leading-relaxed max-w-xs mx-auto">
-            To date, we've logged over 5,000 hours in our Motion Database. This robust training is what makes Memo useful in yours.
-          </p>
-          <div class="flex justify-center gap-8 pt-4 text-[10px] uppercase tracking-wider font-medium">
-            <a href="#" class="border-b border-black pb-0.5">Explore Technology</a>
-            <a href="#" class="border-b border-black pb-0.5">Become a MemDev</a>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-2xl p-8">
+            <h3 class="text-sm font-medium mb-4">Built by operators who've been there</h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Co-founder Michele built media ops from the inside at Wonder Media Network. Moe led systems architecture across 200+ AWS architects. Together, we built CreatorOS to run your business like a business—without turning you into a manager.
+            </p>
+          </div>
+          <div class="bg-white rounded-2xl p-8">
+            <h3 class="text-sm font-medium mb-4">Join the OS for the $70B creator economy</h3>
+            <p class="text-xs text-gray-600 leading-relaxed">
+              Start free. Let AI handle the overhead. Focus on what got you here—creating. Join 8-10M emerging-pro creators who need business infrastructure to scale.
+            </p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Designed for real use -->
+  <!-- Community Section -->
   <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-32">
-    <div class="text-center mb-16">
-      <h2 class="text-[clamp(3rem,6vw,5rem)] leading-tight font-medium mb-8 tracking-tight">
-        Designed for real<br/>use
-      </h2>
-      
-      <div class="inline-flex bg-white rounded-full p-1 border border-gray-200">
-        <button class="px-4 py-1.5 rounded-full bg-black text-white text-xs font-medium">Features</button>
-        <button class="px-4 py-1.5 rounded-full hover:bg-gray-100 text-gray-500 text-xs font-medium transition-colors">360°</button>
-        <button class="px-4 py-1.5 rounded-full hover:bg-gray-100 text-gray-500 text-xs font-medium transition-colors">Anatomy</button>
+    <div class="relative w-full aspect-[16/9] bg-gray-200 rounded-2xl overflow-hidden">
+      <img src="/generated/image-diverse-group-of-content-creators-collab-1770166428737-4.webp" alt="Creator community" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+      <div class="absolute bottom-12 left-12 right-12">
+        <h2 class="text-3xl md:text-5xl font-medium text-white tracking-tight mb-4">
+          Join the creator community
+        </h2>
+        <p class="text-white/90 text-sm max-w-xl">
+          Connect with other emerging-pro creators, share strategies, and grow together. CreatorOS is more than software—it's a community.
+        </p>
       </div>
     </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-32">
-      <!-- Card 1: Privacy -->
-      <div class="aspect-square bg-[#1a1a1a] rounded-2xl overflow-hidden relative group">
-        <!-- Abstract Camera Lens / Privacy visual -->
-        <div class="absolute inset-0 flex items-center justify-center">
-            <div class="w-32 h-32 rounded-full bg-[#2a2a2a] border border-[#333] flex items-center justify-center">
-                <div class="w-16 h-16 rounded-full bg-[#111] border border-[#222]"></div>
-            </div>
-        </div>
-        <div class="absolute top-6 left-6 right-6">
-          <h3 class="text-white text-sm font-bold mb-2">Your privacy is protected</h3>
-          <p class="text-[10px] text-gray-400 leading-relaxed">
-            Memo is an autonomous robot that operates device-first. Through systematic operation, culture, we ensure exactly how much (or how little) is known about your most private spaces.
-          </p>
-        </div>
-      </div>
-
-      <!-- Card 2: Safety -->
-      <div class="aspect-square bg-[#F0EFE9] rounded-2xl p-6 flex flex-col justify-between overflow-hidden relative">
-         <div class="relative z-10">
-            <h3 class="text-black text-sm font-bold mb-2">Safety for the whole family</h3>
-            <p class="text-[10px] text-gray-500 leading-relaxed">
-            With a low center of gravity, stable wheelbase, with no sharp corners and can be wiped down with any household cleaning product.
-            </p>
-         </div>
-         <!-- Orange abstract shape -->
-         <div class="absolute -bottom-10 -right-10 w-48 h-48 bg-[#FF4500] rounded-full blur-xl opacity-80"></div>
-         <div class="absolute bottom-0 right-0 w-full h-1/2 bg-gradient-to-t from-[#FF4500] to-transparent opacity-20"></div>
-         <div class="w-full h-40 bg-[#FF4500] rounded-full absolute -bottom-20 left-1/2 -translate-x-1/2"></div>
-      </div>
-
-      <!-- Card 3: Close up -->
-      <div class="aspect-square bg-gray-200 rounded-2xl overflow-hidden relative">
-         <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=2670&auto=format&fit=crop" alt="Close up" class="w-full h-full object-cover" />
-      </div>
-      
-       <!-- Card 4: Tailored (Colorful balls) -->
-      <div class="aspect-square bg-[#333] rounded-2xl overflow-hidden relative">
-         <!-- CSS Art for colorful balls -->
-         <div class="absolute inset-0">
-            <div class="absolute top-10 left-10 w-20 h-20 rounded-full bg-yellow-400 shadow-lg"></div>
-            <div class="absolute top-20 right-10 w-24 h-24 rounded-full bg-red-500 shadow-lg z-10"></div>
-            <div class="absolute bottom-10 left-20 w-28 h-28 rounded-full bg-blue-500 shadow-lg"></div>
-            <div class="absolute bottom-20 right-20 w-16 h-16 rounded-full bg-green-400 shadow-lg"></div>
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-white/10 backdrop-blur-md z-20"></div>
-         </div>
-         <div class="absolute top-6 left-6 right-6 z-30">
-          <h3 class="text-white text-sm font-bold mb-2">Tailored to your home</h3>
-          <p class="text-[10px] text-gray-300 leading-relaxed">
-            Customize Memo to fit your aesthetic with a selection of color-ways and personalized hats.
-          </p>
-        </div>
-      </div>
-
-      <!-- Card 5: Simple, soft -->
-      <div class="aspect-square bg-[#B8C6C0] rounded-2xl p-6 flex flex-col justify-between overflow-hidden relative">
-         <div class="relative z-10">
-            <h3 class="text-black text-sm font-bold mb-2">Simple, soft and easy to clean</h3>
-            <p class="text-[10px] text-gray-700 leading-relaxed">
-            Memo has a soft-to-the-touch silicone shell, with no sharp corners and can be wiped down with any household cleaning product.
-            </p>
-         </div>
-         <!-- Grid texture -->
-         <div class="absolute inset-0 opacity-20" style="background-image: linear-gradient(#000 1px, transparent 1px), linear-gradient(90deg, #000 1px, transparent 1px); background-size: 20px 20px;"></div>
-      </div>
-
-      <!-- Card 6: Hand touch -->
-      <div class="aspect-square bg-yellow-400 rounded-2xl overflow-hidden relative">
-         <img src="https://images.unsplash.com/photo-1616627561839-074385245c90?q=80&w=2574&auto=format&fit=crop" alt="Hand touch" class="w-full h-full object-cover mix-blend-multiply opacity-80" />
-         <div class="absolute inset-0 bg-yellow-400/30 mix-blend-overlay"></div>
-      </div>
-    </div>
-    
-    <!-- Repeat Tabs for visual consistency if needed or just bottom spacing -->
-    <div class="flex justify-center">
-       <div class="inline-flex bg-white rounded-full p-1 border border-gray-200 opacity-50 pointer-events-none">
-        <button class="px-4 py-1.5 rounded-full bg-black text-white text-xs font-medium">Features</button>
-        <button class="px-4 py-1.5 rounded-full text-gray-500 text-xs font-medium">360°</button>
-        <button class="px-4 py-1.5 rounded-full text-gray-500 text-xs font-medium">Anatomy</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Hats Section -->
-  <section class="bg-[#DCEBEF] py-40 -mx-4 md:-mx-8 px-4 md:px-8 flex flex-col items-center text-center">
-    <div class="flex flex-col md:flex-row items-center justify-between w-full max-w-2xl mb-12 gap-8">
-      <span class="text-xs font-medium text-gray-500">Memo wears many hats.</span>
-      
-      <div class="w-24 h-24 text-black">
-        <!-- Flower/Icon -->
-        <svg viewBox="0 0 100 100" fill="currentColor" class="w-full h-full animate-spin-slow">
-          <path d="M50 20C58 20 65 27 65 35C65 43 58 50 50 50C42 50 35 43 35 35C35 27 42 20 50 20Z" />
-          <path d="M50 80C42 80 35 73 35 65C35 57 42 50 50 50C58 50 65 57 65 65C65 73 58 80 50 80Z" />
-          <path d="M20 50C20 42 27 35 35 35C43 35 50 42 50 50C50 58 43 65 35 65C27 65 20 58 20 50Z" />
-          <path d="M80 50C80 58 73 65 65 65C57 65 50 58 50 50C50 42 57 35 65 35C73 35 80 42 80 50Z" />
-        </svg>
-      </div>
-
-      <span class="text-xs font-medium text-gray-500">Which should it wear next?</span>
-    </div>
-
-    <button class="bg-black text-white px-8 py-3 rounded-full text-xs font-bold uppercase tracking-wider hover:scale-105 transition-transform">
-      Cast your vote now
-    </button>
   </section>
 
   <!-- FAQ Section -->
   <section class="max-w-[800px] mx-auto px-4 py-32">
-    <h3 class="text-xs font-medium text-gray-500 mb-12">Frequently asked questions</h3>
+    <h3 class="text-xs font-medium text-gray-500 mb-12 uppercase tracking-wider">Frequently asked questions</h3>
     
     <div class="space-y-4">
       {#each [
-        "What can Memo do?",
-        "Is Memo available for purchase?",
-        "How much will a Memo cost?",
-        "How big is Memo? How fast can Memo move?",
-        "Is Memo safe?",
-        "What is the Sunday Beta program?"
+        "What does CreatorOS do?",
+        "How much does CreatorOS cost?",
+        "What makes CreatorOS different from other creator tools?",
+        "Who is CreatorOS built for?",
+        "How do the AI agents work?",
+        "When can I start using CreatorOS?"
       ] as question}
         <div class="border-b border-gray-200 pb-4 group cursor-pointer">
           <div class="flex items-center justify-between py-2">
@@ -379,23 +245,24 @@
     </div>
   </section>
 
-  <!-- Founding Families Section -->
+  <!-- CTA Section -->
   <section class="max-w-[1400px] mx-auto px-4 md:px-8 mb-20">
     <div class="bg-[#111111] rounded-2xl p-12 md:p-24 text-center relative overflow-hidden">
       <div class="relative z-10 flex flex-col items-center gap-6">
-        <h2 class="text-white text-xl md:text-2xl font-medium tracking-tight">
-          Be one of our Founding Families. <span class="text-[#FCEE4F]">Insider access. Exclusive perks. Design input.</span>
+        <h2 class="text-white text-2xl md:text-4xl font-medium tracking-tight max-w-3xl">
+          Ready to scale your creator business? <span class="text-[#FCE844]">Join the waitlist for early access.</span>
         </h2>
-        <button class="inline-flex items-center gap-2 px-6 py-2 rounded-full border border-white/20 text-white text-xs uppercase tracking-wider hover:bg-white/10 transition-colors">
-          Beta program
+        <button class="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-[#FCE844] hover:bg-[#fde047] text-black text-sm font-medium tracking-tight hover:scale-105 transition-all">
+          Get early access
           <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1 9L9 1M9 1H3M9 1V7" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
+        <p class="text-gray-400 text-xs">Start free. Let AI handle the overhead. Focus on creating.</p>
       </div>
       
       <!-- Background gradient/glow -->
-      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-2xl max-h-2xl bg-gradient-to-r from-blue-900/20 to-purple-900/20 blur-3xl rounded-full pointer-events-none"></div>
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full max-w-2xl max-h-2xl bg-gradient-to-r from-yellow-900/20 to-orange-900/20 blur-3xl rounded-full pointer-events-none"></div>
     </div>
   </section>
 
